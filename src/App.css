@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:  #B1D9DB;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-container {
+  flex: 30%;
+  display: flex;
+  height:100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.image-container .image-heading {
+  margin-top: 10%;
+  margin-bottom: 8%;
+  color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-container img{
+   width:450px;
+   transform: rotate(-5deg);
+   margin-left: 20%;
+   
 }
+.Heading{
+  width:450px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  margin-bottom: 10px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.g-f-div{
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+
+}
+.logo{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap:8px;
+  padding:8px ;
+  border: 1px solid gainsboro ;
+  border-radius: 10px;
+
+}
+.form-container {
+  flex: 60%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 40px;
+  height: 100%;
+}
+form{
+  width:450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+error-message {
+  color: red;
 }
 
-.App-link {
-  color: #61dafb;
+.success-message {
+  color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signup-form-container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form-container .form-field {
+  margin-bottom: 10px;
+}
+ input {
+  padding:12px 280px 12px 0px;
+  margin: 10px;
+  outline: 0;
+  border:0;
+  border-bottom: 2px solid gainsboro ;
+  
+}
+
+.signup-form-container input[type='text'],
+.signup-form-container input[type='email'],
+.signup-form-container input[type='password'] {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 3px;
+ 
+}
+button{
+  width:100%;
+  padding: 10px;
+  background-color: #B1D9DB;
+  color:white;
+  font-family: bolder;
+  font-size: 18px;
+  border: 0;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  
+ 
+}
+.signup-form-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form-container button:hover {
+  background-color: #45a049;
 }
